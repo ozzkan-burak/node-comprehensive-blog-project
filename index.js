@@ -10,6 +10,9 @@ const app = express();
 app.use(indexRouter);
 
 //App config
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public')); //public folder
+
 const PORT = 5000
  
 app.listen(PORT, () => {
