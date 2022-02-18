@@ -13,6 +13,14 @@ router.get('/about', (req, res)=>{
 
 router.get('/contact', (req, res)=>{
   res.render('contact');
+});
+
+router.get('/resume', (req, res)=>{
+  res.render('resume');
+});
+
+router.get('/signin', (req, res)=>{
+  res.render('admin/signin');
 })
 
 
