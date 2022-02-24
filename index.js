@@ -1,13 +1,16 @@
 const mongoose = require('mongoose');
 const express = require('express');
+const bodyParser = require('body-parser');
 
 //Routes
 const indexRouter = require('./routes/indexRouter');
+const adminRouter = require('./routes/adminRoutes');
 
 const app = express();
 
 //Route using
 app.use(indexRouter);
+app.use(adminRouter);
 
 //App config
 app.set('view engine', 'ejs');
